@@ -11,7 +11,6 @@ export class HomeComponent implements OnInit {
   routeAnimationsElements = ROUTE_ANIMATIONS_ELEMENTS;
 
   constructor() { 
-    console.log("HOWDY")
   }
 
   ngOnInit(): void { }

@@ -1,5 +1,9 @@
 {
+  "MENU": {
+    "HOME": "home"
+  },
   "HOME": {
-          "STARTED": "GET STARTED"
+          "STARTED": "GET STARTED",
+          "TITLE": "Dare home"
       }  
 }

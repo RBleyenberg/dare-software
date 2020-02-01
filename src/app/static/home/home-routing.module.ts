@@ -6,7 +6,7 @@ const routes: Routes = [
   {
     path: 'home',
     component: HomeComponent,
-    data: { title: 'dare-home' }
+    data: { title: 'HOME.TITLE' }
   }
 ];
 
