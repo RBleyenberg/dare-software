@@ -22,7 +22,7 @@ export class AppComponent implements OnInit {
 
   constructor(
     public electronService: ElectronService,
-    private translate: TranslateService ) {
+    public translate: TranslateService ) {
 
     translate.setDefaultLang('en');
     console.log('AppConfig', AppConfig);
