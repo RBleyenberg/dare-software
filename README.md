@@ -1,6 +1,7 @@
 ## Stack
 
 - Angular
+- Electron
 - ngrx 
 - Angular Material
 - Bootstrap 4 (only reset, utils and grids)
