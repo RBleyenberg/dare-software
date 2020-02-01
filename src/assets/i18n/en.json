@@ -1,9 +1,26 @@
 {
-  "MENU": {
-    "HOME": "home"
+  "menu": {
+    "home": "home",
+    "settings": "settings"
   },
-  "HOME": {
-          "STARTED": "GET STARTED",
-          "TITLE": "Dare home"
-      }  
+  "home": {
+    "started": "GET STARTED",
+    "title": "Dare home"
+  },
+  "settings": {
+    "animations.elements": "Navigation page elements slide up",
+    "animations.page": "Navigation whole page transition",
+    "animations.title": "Animations",
+    "general.language.nl": "Nederlands",
+    "general.language.en": "English",
+    "general.placeholder": "Language",
+    "general.title": "General",
+    "themes.blue": "Blue",
+    "themes.dark": "Dark",
+    "themes.night-mode": "Auto night mode (from 21:00 to 7:00)",
+    "themes.placeholder": "Color Theme",
+    "themes.sticky-header": "Sticky header",
+    "themes.title": "Themes",
+    "title": "Settings"
+  }
 }

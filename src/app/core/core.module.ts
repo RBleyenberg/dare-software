@@ -18,6 +18,8 @@ import { NotificationService } from './notifications/notification.service';
 import { AnimationsService } from './animations/animations.service';
 import { LocalStorageService } from './local-storage/local-storage.service';
 import { HttpErrorInterceptor } from './http-interceptors/http-error.interceptor';
+import { selectEffectiveTheme, selectSettingsLanguage, selectSettingsStickyHeader } from './settings/settings.selectors';
+import { SettingsEffects } from './settings/settings.effects';
 
 export {
   TitleService,
@@ -27,7 +29,10 @@ export {
   selectRouterState,
   AnimationsService,
   NotificationService,
-  LocalStorageService
+  LocalStorageService,
+  selectEffectiveTheme,
+  selectSettingsLanguage,
+  selectSettingsStickyHeader
 }
 
 // AoT requires an exported function for factories
@@ -43,7 +48,7 @@ export function HttpLoaderFactory(http: HttpClient): TranslateHttpLoader {
     StoreModule.forRoot(reducers, { metaReducers }),
     StoreRouterConnectingModule.forRoot(),
     EffectsModule.forRoot([
-
+      SettingsEffects
     ]),
     StoreDevtoolsModule.instrument({ 
       maxAge: 25,

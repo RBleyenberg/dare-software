@@ -1,18 +1,18 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { HomeComponent } from './web/home.component';
+import { SettingsContainerComponent } from './web/settings-container.component';
+
 
 const routes: Routes = [
   {
-    path: 'home',
-    component: HomeComponent,
-    data: { title: 'menu.home' }
+    path: '',
+    component: SettingsContainerComponent,
+    data: { title: 'menu.settings' }
   }
 ];
 
 @NgModule({
-  declarations: [],
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule]
 })
-export class HomeRoutingModule {}
+export class SettingsRoutingModule {}
