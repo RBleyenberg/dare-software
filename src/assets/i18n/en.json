@@ -1,7 +1,8 @@
 {
   "menu": {
     "home": "home",
-    "settings": "settings"
+    "settings": "settings",
+    "modules.dashboard": "Dashboard"
   },
   "home": {
     "started": "GET STARTED",

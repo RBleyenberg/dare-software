@@ -10,7 +10,7 @@ import { SettingsState } from './settings/settings.model';
 
 export const reducers: ActionReducerMap<AppState> = {
     router: routerReducer,
-    settings: settingsReducer,
+    settings: settingsReducer
 };
 
 export const metaReducers: MetaReducer<AppState>[] = [

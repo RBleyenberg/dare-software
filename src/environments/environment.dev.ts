@@ -7,5 +7,6 @@ export const AppConfig = {
   appName: 'DARE-Business Software',
   production: false,
   environment: 'DEV',
-  test: true
+  test: true,
+  i18nPrefix: '',
 };

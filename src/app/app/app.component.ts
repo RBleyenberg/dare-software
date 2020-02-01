@@ -20,7 +20,8 @@ export class AppComponent implements OnInit {
   logo = require('../../assets/logo/dare.png');
   languages = ['en', 'nl'];
   navigation = [
-    { link: 'home', label: 'menu.home' }
+    { link: 'home', label: 'menu.home' },
+    { link: 'modules', label: 'menu.modules.dashboard' }
   ];
   navigationSideMenu = [
     ...this.navigation,

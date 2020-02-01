@@ -14,11 +14,15 @@
 @import 'styles-reset.scss-theme';
 @import '../app/app.component.scss-theme';
 @import '../static/home/web/home.component.scss-theme.scss';
+@import '../modules/container/container.component.scss-theme.scss';
+@import '../modules/dashboard/web/dashboard-container.component.scss-theme.scss';
 
 @mixin custom-components-theme($theme) {
   @include dare-styles-reset-theme($theme);
   @include dare-app-component-theme($theme);
   @include dare-home-component-theme($theme);
+  @include dare-container-component-theme($theme);
+  @include dare-dashboard-container-component-theme($theme);
 }
 
 .default-theme {
