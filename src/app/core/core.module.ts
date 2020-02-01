@@ -17,6 +17,7 @@ import { TitleService } from './title/title.service';
 import { NotificationService } from './notifications/notification.service';
 import { AnimationsService } from './animations/animations.service';
 import { LocalStorageService } from './local-storage/local-storage.service';
+import { HttpErrorInterceptor } from './http-interceptors/http-error.interceptor';
 
 export {
   TitleService,
@@ -58,6 +59,7 @@ export function HttpLoaderFactory(http: HttpClient): TranslateHttpLoader {
     })
   ],
   providers: [
+    { provide: HTTP_INTERCEPTORS, useClass: HttpErrorInterceptor, multi: true },
     { provide: RouterStateSerializer, useClass: CustomSerializer },
     { provide: ErrorHandler, useClass: AppErrorHandler }
   ],
