@@ -13,10 +13,12 @@
 
 @import 'styles-reset.scss-theme';
 @import '../app/app.component.scss-theme';
+@import '../static/home/web/home.component.scss-theme.scss';
 
 @mixin custom-components-theme($theme) {
   @include dare-styles-reset-theme($theme);
   @include dare-app-component-theme($theme);
+  @include dare-home-component-theme($theme);
 }
 
 .default-theme {

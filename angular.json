@@ -6,6 +6,7 @@
     "angular-electron": {
       "root": "",
       "sourceRoot": "src",
+      "prefix": "dare",
       "projectType": "application",
       "architect": {
         "build": {
@@ -25,6 +26,7 @@
               "src/favicon.512x512.png"
             ],
             "styles": [
+              "src/app/styles/styles-app-loading.scss",
               "src/app/styles/styles.scss"
             ],
             "scripts": [],
@@ -34,15 +36,15 @@
           },
           "configurations": {
             "dev": {
-              "optimization": false,
+              "optimization": true,
               "outputHashing": "all",
               "sourceMap": true,
               "extractCss": true,
               "namedChunks": false,
-              "aot": false,
+              "aot": true,
               "extractLicenses": true,
               "vendorChunk": false,
-              "buildOptimizer": false,
+              "buildOptimizer": true,
               "fileReplacements": [
                 {
                   "replace": "src/environments/environment.ts",
@@ -51,15 +53,15 @@
               ]
             },
             "web": {
-              "optimization": false,
+              "optimization": true,
               "outputHashing": "all",
               "sourceMap": true,
               "extractCss": true,
               "namedChunks": false,
-              "aot": false,
+              "aot": true,
               "extractLicenses": true,
               "vendorChunk": false,
-              "buildOptimizer": false,
+              "buildOptimizer": true,
               "fileReplacements": [
                 {
                   "replace": "src/environments/environment.ts",

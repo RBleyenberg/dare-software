@@ -16,6 +16,13 @@
 - fully responsive design
 - angular-material and custom components in `SharedModule`
 
+## Documention on choices
+
+- OnPush Change Detection Strategy
+https://netbasal.com/a-comprehensive-guide-to-angular-onpush-change-detection-strategy-5bac493074a4
+
+
+
 ## To build for development
 
 - **in a terminal window** -> npm start

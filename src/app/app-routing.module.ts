@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { PageNotFoundComponent } from './shared/components';
 
 const routes: Routes = [
   {
@@ -9,13 +8,20 @@ const routes: Routes = [
     pathMatch: 'full'
   },
   {
+    path: 'home',
+    loadChildren: () => import('./static/home/home.module').then(m => m.HomeModule)
+  },
+  {
     path: '**',
-    component: PageNotFoundComponent
+    redirectTo: 'home'
   }
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes, { useHash: true })],
+  imports: [RouterModule.forRoot(routes, {
+     useHash: true,
+     scrollPositionRestoration: 'enabled' 
+    })],
   exports: [RouterModule]
 })
 export class AppRoutingModule {}

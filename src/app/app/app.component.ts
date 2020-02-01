@@ -1,18 +1,29 @@
-import { Component } from '@angular/core';
+import browser from 'browser-detect';
+import { Component, OnInit } from '@angular/core';
 import { ElectronService } from '../core/services';
 import { TranslateService } from '@ngx-translate/core';
 import { AppConfig } from '../../environments/environment';
+import { routeAnimations } from '../core/core.module';
 
 @Component({
-  selector: 'app-root',
+  selector: 'dare-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  styleUrls: ['./app.component.scss'],
+  animations: [routeAnimations]
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
+
+  year = new Date().getFullYear();
+  logo = require('../../assets/logo/dare.png');
+  languages = ['en', 'nl'];
+  navigation = [
+    { link: 'home', label: 'home' }
+  ];
+
   constructor(
     public electronService: ElectronService,
-    private translate: TranslateService
-  ) {
+    private translate: TranslateService ) {
+
     translate.setDefaultLang('en');
     console.log('AppConfig', AppConfig);
 
@@ -25,4 +36,28 @@ export class AppComponent {
       console.log('Mode web');
     }
   }
+
+  private static isIEorEdgeOrSafari() {
+    return ['ie', 'edge', 'safari'].includes(browser().name);
+  }
+
+  ngOnInit(): void {
+
+    if (AppComponent.isIEorEdgeOrSafari()) {
+
+      console.log("FUCK FUCK FUCK")
+
+    }
+
+  }
+
+  onLoginClick() {
+  }
+
+  onLogoutClick() {
+  }
+
+  onLanguageSelect({ value: language }) {
+  }
+
 }
