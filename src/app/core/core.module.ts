@@ -5,9 +5,19 @@ import { HttpClientModule, HttpClient } from '@angular/common/http';
 import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 
+import { StoreRouterConnectingModule, RouterStateSerializer } from '@ngrx/router-store';
+import { StoreModule } from '@ngrx/store';
+import { EffectsModule } from '@ngrx/effects';
+import { StoreDevtoolsModule } from '@ngrx/store-devtools';
+import { AppConfig } from '../../environments/environment';
+import { CustomSerializer } from './router/custom-serializer';
+import { AppState, reducers, metaReducers, selectRouterState } from './core.state';
+
 export {
   routeAnimations, 
-  ROUTE_ANIMATIONS_ELEMENTS
+  ROUTE_ANIMATIONS_ELEMENTS,
+  AppState,
+  selectRouterState
 }
 
 // AoT requires an exported function for factories
@@ -20,6 +30,16 @@ export function HttpLoaderFactory(http: HttpClient): TranslateHttpLoader {
   imports: [
     CommonModule,
     HttpClientModule,
+    StoreModule.forRoot(reducers, { metaReducers }),
+    StoreRouterConnectingModule.forRoot(),
+    EffectsModule.forRoot([
+
+    ]),
+    StoreDevtoolsModule.instrument({ 
+      maxAge: 25,
+      logOnly: AppConfig.production 
+    }),
+    
     TranslateModule.forRoot({
       loader: {
         provide: TranslateLoader,
@@ -27,6 +47,9 @@ export function HttpLoaderFactory(http: HttpClient): TranslateHttpLoader {
         deps: [HttpClient]
       }
     })
+  ],
+  providers: [
+    { provide: RouterStateSerializer, useClass: CustomSerializer }
   ],
   exports: [TranslateModule]
 })
