@@ -12,8 +12,10 @@ import { StoreDevtoolsModule } from '@ngrx/store-devtools';
 import { AppConfig } from '../../environments/environment';
 import { CustomSerializer } from './router/custom-serializer';
 import { AppState, reducers, metaReducers, selectRouterState } from './core.state';
+import { TitleService } from './title/title.service';
 
 export {
+  TitleService,
   routeAnimations, 
   ROUTE_ANIMATIONS_ELEMENTS,
   AppState,
