@@ -22,6 +22,19 @@
 
 https://netbasal.com/a-comprehensive-guide-to-angular-onpush-change-detection-strategy-5bac493074a
 
+- Angular dependency injection
+
+https://medium.com/@tomastrajan/total-guide-to-angular-6-dependency-injection-providedin-vs-providers-85b7a347b59f
+
+- subscribe() vs | async Pipe
+
+https://medium.com/angular-in-depth/angular-question-rxjs-subscribe-vs-async-pipe-in-component-templates-c956c8c0c794
+
+- Reactive sub-forms
+
+https://medium.com/@tomastrajan/angular-reactive-sub-forms-type-safe-without-duplication-dbd24225e1e8
+
+
 ## NGRX 
 
 

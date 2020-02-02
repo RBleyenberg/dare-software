@@ -60,6 +60,7 @@ export class AppComponent implements OnInit {
     this.storageService.testLocalStorage();
 
     if (AppComponent.isIEorEdgeOrSafari()) {
+      console.log("FUCK FUCK FUCK")
       this.store.dispatch(
         actionSettingsChangeAnimationsPageDisabled({
           pageAnimationsDisabled: true
