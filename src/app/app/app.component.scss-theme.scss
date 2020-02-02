@@ -17,6 +17,11 @@
       .link {
         color: mat-color($primary, default-contrast);
       }
+
+      .toolbar-separator {
+        background: map-get($primary, darker);
+    }
+
     }
 
     mat-sidenav {
