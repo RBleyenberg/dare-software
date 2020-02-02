@@ -1,21 +1,11 @@
 {
-  "name": "angular-electron",
-  "version": "6.4.1",
-  "description": "Angular 8 with Electron (Typescript + SASS + Hot Reload)",
-  "homepage": "https://github.com/maximegris/angular-electron",
+  "name": "dare-business-software",
+  "version": "1.0.0",
+  "description": "Dare solutions BV, provides your company with a full ERP software solution",
+  "homepage": "#",
   "author": {
-    "name": "Maxime GRIS",
-    "email": "maxime.gris@gmail.com"
+    "name": "Dare-solutions BV"
   },
-  "keywords": [
-    "angular",
-    "angular 8",
-    "electron",
-    "typescript",
-    "eslint",
-    "spectron",
-    "sass"
-  ],
   "main": "main.js",
   "private": true,
   "scripts": {
