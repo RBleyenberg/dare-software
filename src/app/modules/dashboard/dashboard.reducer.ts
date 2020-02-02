@@ -1,14 +1,14 @@
 
 import { createReducer, on, Action } from '@ngrx/store';
-import { DashboardsState } from './model';
+import { DashboardState } from './model';
 
-export const initialState: DashboardsState = {
+export const initialState: DashboardState = {
 };
 
 const reducer = createReducer(
   initialState
 );
 
-export function dashboardsReducer(state: DashboardsState | undefined, action: Action) {
+export function dashboardReducer(state: DashboardState | undefined, action: Action) {
   return reducer(state, action);
 }

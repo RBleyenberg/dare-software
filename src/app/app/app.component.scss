@@ -9,8 +9,13 @@ mat-sidenav-container {
   height: 100%;
   width: 100%;
 
+  mat-toolbar {
+    max-height: 52px;  // toolbar height ... change content class also then
+  }
+
   .toolbar {
     position: fixed;
+    
     width: 100%;
     display: flex;
     z-index: 10;
@@ -28,6 +33,7 @@ mat-sidenav-container {
       overflow: hidden;
       padding-top: 4px;
       text-overflow: ellipsis;
+      font: 600 15px/28px Roboto, "Helvetica Neue", sans-serif;  // name of branding size
 
       &.center {
         text-align: center;
@@ -74,7 +80,7 @@ mat-sidenav-container {
 
     .content {
       flex: 1 0 auto;
-      margin-top: 64px;
+      margin-top: 52px;
       overflow: hidden;
     }
 

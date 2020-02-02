@@ -1,18 +1,18 @@
 import { ActionReducerMap, createFeatureSelector } from '@ngrx/store';
 import { AppState } from '../core/core.module';
-import { DashboardsState } from './dashboard/model';
-import { dashboardsReducer } from './dashboard/dashboard.reducer';
+import { DashboardState } from './dashboard/model';
+import { dashboardReducer } from './dashboard/dashboard.reducer';
 
 export const FEATURE_NAME = 'modules';
 export const selectModules = createFeatureSelector<State, ModulesState>(
   FEATURE_NAME
 );
 export const reducers: ActionReducerMap<ModulesState> = {
-  dashboards: dashboardsReducer
+  dashboard: dashboardReducer
 };
 
 export interface ModulesState {
-  dashboards: DashboardsState;
+  dashboard: DashboardState;
 }
 
 export interface State extends AppState {

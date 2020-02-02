@@ -16,14 +16,14 @@
 - fully responsive design
 - angular-material and custom components in `SharedModule`
 
-## Documention on choices
+## Documentions on stuff
 
 - OnPush Change Detection Strategy
+
 https://netbasal.com/a-comprehensive-guide-to-angular-onpush-change-detection-strategy-5bac493074a
 
 ## NGRX 
 
-https://medium.com/@tomastrajan/object-assign-vs-object-spread-in-angular-ngrx-reducers-3d62ecb4a4b0
 
 
 

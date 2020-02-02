@@ -1,5 +1,5 @@
 
   
-  export interface DashboardsState {
+  export interface DashboardState {
 
   }
