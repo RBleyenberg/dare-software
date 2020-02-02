@@ -11,6 +11,7 @@ import { ContainerComponent } from './container/container.component';
 import { ModulesEffects } from './modules.effects';
 import { ModulesRoutingModule } from './modules-routing.module';
 import { DashboardComponent } from './dashboard/web/dashboard-container.component';
+import { CrmComponent } from './crm/web/crm.component';
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(
@@ -40,7 +41,8 @@ export function HttpLoaderFactory(http: HttpClient) {
   ],
     declarations: [
     ContainerComponent,
-    DashboardComponent
+    DashboardComponent,
+    CrmComponent
   ],
   providers: []
 })

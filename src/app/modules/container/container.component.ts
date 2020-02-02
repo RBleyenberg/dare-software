@@ -14,7 +14,8 @@ export class ContainerComponent implements OnInit {
  // isAuthenticated$: Observable<boolean>;
 
   modules = [
-    { link: 'container', label: 'modules.container.title' }
+    { link: 'dashboard', label: 'modules.dashboard.title' },
+    { link: 'crm', label: 'modules.crm.title' }
   ];
 
   constructor(private store: Store<State>) {}

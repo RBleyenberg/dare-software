@@ -1,3 +1,4 @@
 {
-    "modules.container.title": "Dashboard"
+    "modules.dashboard.title": "dashboard",
+    "modules.crm.title": "crm"
   }
