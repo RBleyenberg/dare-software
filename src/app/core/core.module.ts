@@ -45,7 +45,13 @@ export function HttpLoaderFactory(http: HttpClient): TranslateHttpLoader {
   imports: [
     CommonModule,
     HttpClientModule,
-    StoreModule.forRoot(reducers, { metaReducers }),
+    StoreModule.forRoot(reducers, { 
+      metaReducers,
+      runtimeChecks: {
+        strictStateImmutability: true,
+        strictActionImmutability: true
+      }, 
+     }),
     StoreRouterConnectingModule.forRoot(),
     EffectsModule.forRoot([
       SettingsEffects
