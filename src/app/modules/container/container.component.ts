@@ -11,7 +11,7 @@ import { routeAnimations } from '../../core/core.module';
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class ContainerComponent implements OnInit {
- // isAuthenticated$: Observable<boolean>;
+  
 
   modules = [
     { link: 'dashboard', label: 'modules.dashboard.title' },
@@ -21,6 +21,6 @@ export class ContainerComponent implements OnInit {
   constructor(private store: Store<State>) {}
 
   ngOnInit(): void {
-  //  this.isAuthenticated$ = this.store.pipe(select(selectIsAuthenticated));
+
   }
 }

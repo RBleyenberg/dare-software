@@ -19,7 +19,7 @@ import { MatTooltipModule } from '@angular/material/tooltip';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { MatDividerModule } from '@angular/material/divider';
-import { MatSliderModule } from '@angular/material/';
+import { MatSliderModule, MatGridListModule } from '@angular/material/';
 import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatNativeDateModule } from '@angular/material';
 
@@ -89,12 +89,14 @@ library.add(
   faBook
 );
 
+
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     TranslateModule,
     MatButtonModule,
+    MatGridListModule,
     MatToolbarModule,
     MatSelectModule,
     MatTabsModule,
@@ -120,6 +122,7 @@ library.add(
     ReactiveFormsModule,
     TranslateModule,
     MatButtonModule,
+    MatGridListModule,
     MatMenuModule,
     MatTabsModule,
     MatChipsModule,
