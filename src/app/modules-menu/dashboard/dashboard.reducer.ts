@@ -1,5 +1,5 @@
 
-import { createReducer, on, Action } from '@ngrx/store';
+import { createReducer, Action } from '@ngrx/store';
 import { DashboardState } from './model';
 
 export const initialState: DashboardState = {

@@ -21,7 +21,7 @@ export class AppComponent implements OnInit {
   languages = ['en', 'nl'];
   navigation = [
     { link: 'home', label: 'menu.home' },
-    { link: 'modules', label: 'menu.modules.dashboard' }
+    { link: 'modules-menu', label: 'menu.modules.dashboard' }
   ];
   navigationSideMenu = [
     ...this.navigation,

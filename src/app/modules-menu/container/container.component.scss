@@ -6,6 +6,7 @@ nav {
   .mat-tab-link {
     min-width: 120px;
     padding: 0 15px;
+    font-weight: 600;
   }
 
   @media (max-width: map-get($grid-breakpoints, md)) {

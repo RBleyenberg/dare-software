@@ -7,10 +7,10 @@ export class AnimationsService {
   constructor() {
 
     //FIX set in store
-    AnimationsService.routeAnimationType = 'ALL';
+    AnimationsService.routeAnimationType = 'NONE';
   }
 
-  private static routeAnimationType: RouteAnimationType = 'ALL';
+  private static routeAnimationType: RouteAnimationType = 'NONE';
 
   static isRouteAnimationsType(type: RouteAnimationType) {
     return AnimationsService.routeAnimationType === type;

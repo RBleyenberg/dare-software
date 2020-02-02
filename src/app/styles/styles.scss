@@ -14,8 +14,8 @@
 @import 'styles-reset.scss-theme';
 @import '../app/app.component.scss-theme';
 @import '../static/home/web/home.component.scss-theme.scss';
-@import '../modules/container/container.component.scss-theme.scss';
-@import '../modules/dashboard/web/dashboard-container.component.scss-theme.scss';
+@import '../modules-menu/container/container.component.scss-theme.scss';
+@import '../modules-menu/dashboard/web/dashboard-container.component.scss-theme.scss';
 
 @mixin custom-components-theme($theme) {
   @include dare-styles-reset-theme($theme);

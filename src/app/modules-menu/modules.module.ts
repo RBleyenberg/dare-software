@@ -46,6 +46,6 @@ export function HttpLoaderFactory(http: HttpClient) {
   ],
   providers: []
 })
-export class ModulesModule {
+export class ModulesMenuModule {
   constructor() {}
 }
